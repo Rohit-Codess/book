@@ -9,33 +9,29 @@ const BannerCarousel = () => {
   const banners = [
     {
       id: 1,
-      title: "Discover Amazing Books",
-      subtitle: "Up to 50% off on bestsellers",
-      cta: "Shop Now",
-      image: "/images/section/homeSection/BannerCarousel/1.jpeg",
+      title: "Modern Politics",
+      subtitle: "Explore the latest trends and insights",
+      image: "/images/section/homeSection/BannerCarousel/1.jpg",
       textColor: "text-white"
     },
     {
       id: 2,
-      title: "New Arrivals This Week",
-      subtitle: "Fresh collection of fiction and non-fiction",
-      cta: "Explore Now",
-      image: "/images/section/homeSection/BannerCarousel/2.jpeg",
+      title: "Stationery Essentials",
+      subtitle: "Stationery items for every need",
+      image: "/images/section/homeSection/BannerCarousel/2.jpg",
       textColor: "text-white"
     },
     {
       id: 3,
       title: "Children's Special",
       subtitle: "Educational and entertaining books for kids",
-      cta: "Buy Now",
-      image: "/images/section/homeSection/BannerCarousel/3.jpeg",
+      image: "/images/section/homeSection/BannerCarousel/3.jpg",
       textColor: "text-white"
     },
     {
       id: 4,
-      title: "Academic Excellence",
-      subtitle: "Complete range of textbooks and study materials",
-      cta: "Learn More",
+      title: "Human Brain",
+      subtitle: "Unlock the mysteries of the mind",
       image: "/images/section/homeSection/BannerCarousel/4.jpg",
       textColor: "text-white"
     }
@@ -63,7 +59,7 @@ const BannerCarousel = () => {
   }
 
   return (
-    <section className="relative w-full h-64 sm:h-80 lg:h-96 overflow-hidden">
+    <section className="relative w-full h-100 sm:h-80 lg:h-96 overflow-hidden">
       {/* Banner Slides */}
       <div 
         className="flex transition-transform duration-500 ease-in-out h-full"
@@ -77,25 +73,20 @@ const BannerCarousel = () => {
             {/* Background Image */}
             <img
               src={banner.image}
+              onClick={() => navigate('/books')}
               alt={banner.title}
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover brightness-75"
               
             />
             
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className={`text-3xl sm:text-4xl lg:text-6xl font-bold ${banner.textColor} mb-4 drop-shadow-lg`}>
-                {banner.title}
+                {/* {banner.title} */}
               </h2>
               <p className={`text-lg sm:text-xl lg:text-2xl ${banner.textColor} mb-8 drop-shadow-md`}>
-                {banner.subtitle}
+                {/* {banner.subtitle} */}
               </p>
-              <button 
-                onClick={() => navigate('/books')}
-                className="bg-white text-gray-800 px-8 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 text-lg shadow-lg"
-              >
-                {banner.cta}
-              </button>
             </div>
           </div>
         ))}

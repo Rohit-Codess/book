@@ -370,7 +370,7 @@ const BookSections = () => {
   const sections = [
     { id: 'deals', name: 'Deals', books: sampleBooks.slice(0, 12) },
     { id: 'preorders', name: 'Pre-Orders', books: sampleBooks.slice(12, 18) },
-    { id: 'arrivals', name: 'New Arrivals', books: sampleBooks.slice(18, 24) },
+    { id: 'arrivals', name: 'New Arrivals', books: sampleBooks.slice(5, 15) },
     { id: 'fiction', name: 'Top Fiction', books: sampleBooks.slice(24, 30) },
     { id: 'youngadult', name: 'Young Adult', books: sampleBooks.slice(6, 12) },
     { id: 'children', name: 'Children', books: sampleBooks.slice(20, 26) }
@@ -407,15 +407,10 @@ const BookSections = () => {
           alt={book.title}
           className="w-full h-40 sm:h-52 md:h-64 object-cover rounded-t-lg"
         />
-        {book.discount > 0 && (
-          <div className="absolute top-1 left-1 sm:top-2 sm:left-2 bg-red-500 text-white px-1 sm:px-2 py-1 rounded text-xs font-semibold">
-            {book.discount}% OFF
-          </div>
-        )}
       </div>
       
       <div className="p-2 sm:p-3 md:p-4">
-        <h3 className="font-semibold text-gray-900 mb-1 line-clamp-2 text-xs sm:text-sm">
+        <h3 className="truncate font-semibold text-gray-900 mb-1 line-clamp-2 text-xs sm:text-sm">
           {book.title}
         </h3>
         <p className="text-gray-600 text-xs mb-1 sm:mb-2">{book.author}</p>

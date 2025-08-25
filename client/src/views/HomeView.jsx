@@ -1,12 +1,12 @@
 import React from 'react';
 import BannerCarousel from '../components/section/homeSection/BannerCarousel';
-import TopCategories from '../components/section/homeSection/TopCategories';
+// import TopCategories from '../components/section/homeSection/TopCategories';
 import BookSections from '../components/section/homeSection/BookSections';
 import CategoriesGrid from '../components/section/homeSection/CategoriesGrid';
 import FeaturedCollections from '../components/section/homeSection/FeaturedCollections';
 import PromotionalBanners from '../components/section/homeSection/PromotionalBanners';
 import FeaturedAuthorsPublishers from '../components/section/homeSection/FeaturedAuthorsPublishers';
-import BestSellers from '../components/section/homeSection/BestSellers';
+// import BestSellers from '../components/section/homeSection/BestSellers';
 
 const HomeView = () => {
   return (
@@ -15,7 +15,7 @@ const HomeView = () => {
       <BannerCarousel />
       
       {/* Top Categories */}
-      <TopCategories />
+      {/* <TopCategories /> */}
       
       {/* Book Sections */}
       <BookSections />
@@ -33,7 +33,7 @@ const HomeView = () => {
       <FeaturedAuthorsPublishers />
       
       {/* Best Sellers */}
-      <BestSellers />
+      {/* <BestSellers /> */}
     </div>
   );
 };
