@@ -50,13 +50,13 @@ const BannerCarousel = () => {
     setCurrentSlide(index)
   }
 
-  const goToPrevious = () => {
-    setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length)
-  }
+  // const goToPrevious = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length)
+  // }
 
-  const goToNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % banners.length)
-  }
+  // const goToNext = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % banners.length)
+  // }
 
   return (
     <section className="relative w-full h-100 md:h-96 lg:h-[32rem] xl:h-[36rem] overflow-hidden">
@@ -93,7 +93,7 @@ const BannerCarousel = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <button
+      {/* <button
         onClick={goToPrevious}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all duration-200"
       >
@@ -105,7 +105,7 @@ const BannerCarousel = () => {
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all duration-200"
       >
         <ChevronRight className="h-6 w-6 text-gray-800" />
-      </button>
+      </button> */}
 
       {/* Dot Indicators */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">

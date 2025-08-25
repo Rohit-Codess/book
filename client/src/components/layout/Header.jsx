@@ -35,8 +35,15 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
-              Book World
+            <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+              <img 
+                src="/logo.jpeg" 
+                alt="Book World Logo" 
+                className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover border-2 border-blue-200 shadow-sm"
+              />
+              <span className="hidden sm:block text-xl font-bold text-blue-600">
+                Book World
+              </span>
             </Link>
           </div>
 
