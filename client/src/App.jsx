@@ -10,6 +10,7 @@ import AuthorsView from './views/AuthorsView'
 import PublishersView from './views/PublishersView'
 import CatalogView from './views/CatalogView'
 import ProductDetailView from './views/ProductDetailView'
+import ContactSupport from './views/ContactSupport'
 import Login from './views/Login'
 import Signup from './views/Signup'
 import NotFound from './views/NotFound'
@@ -38,6 +39,7 @@ function App() {
             <Route path="/authors" element={<AuthorsView />} />
             <Route path="/publishers" element={<PublishersView />} />
             <Route path="/catalog" element={<CatalogView />} />
+            <Route path="/contact" element={<ContactSupport />} />
           </Route>
           
           {/* Auth routes - without layout */}

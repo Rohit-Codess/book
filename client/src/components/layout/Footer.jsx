@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { 
   Facebook, 
   Twitter, 
@@ -27,13 +28,13 @@ const Footer = () => {
   const footerLinks = {
     company: [
       { name: 'About Us', href: '#' },
-      { name: 'Contact Us', href: '#' },
+      { name: 'Contact Us', href: '/contact' },
       { name: 'Careers', href: '#' },
       { name: 'Press', href: '#' },
       { name: 'Blog', href: '#' }
     ],
     help: [
-      { name: 'Customer Support', href: '#' },
+      { name: 'Customer Support', href: '/contact' },
       { name: 'Track Your Order', href: '#' },
       { name: 'Return Policy', href: '#' },
       { name: 'Shipping Info', href: '#' },
@@ -126,12 +127,21 @@ const Footer = () => {
               <ul className="space-y-2">
                 {footerLinks.company.map((link) => (
                   <li key={link.name}>
-                    <a 
-                      href={link.href} 
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
-                    >
-                      {link.name}
-                    </a>
+                    {link.href.startsWith('/') ? (
+                      <Link 
+                        to={link.href} 
+                        className="text-gray-400 hover:text-white transition-colors duration-200"
+                      >
+                        {link.name}
+                      </Link>
+                    ) : (
+                      <a 
+                        href={link.href} 
+                        className="text-gray-400 hover:text-white transition-colors duration-200"
+                      >
+                        {link.name}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -143,12 +153,21 @@ const Footer = () => {
               <ul className="space-y-2">
                 {footerLinks.help.map((link) => (
                   <li key={link.name}>
-                    <a 
-                      href={link.href} 
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
-                    >
-                      {link.name}
-                    </a>
+                    {link.href.startsWith('/') ? (
+                      <Link 
+                        to={link.href} 
+                        className="text-gray-400 hover:text-white transition-colors duration-200"
+                      >
+                        {link.name}
+                      </Link>
+                    ) : (
+                      <a 
+                        href={link.href} 
+                        className="text-gray-400 hover:text-white transition-colors duration-200"
+                      >
+                        {link.name}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

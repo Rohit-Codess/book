@@ -119,7 +119,7 @@ const Header = () => {
               </Link>
               
               <Link
-                to="/cart"
+                to="/login"
                 className="relative p-2 text-gray-600 hover:text-blue-600 transition-colors"
               >
                 <ShoppingCart className="h-6 w-6" />
