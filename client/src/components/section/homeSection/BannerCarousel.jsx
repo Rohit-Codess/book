@@ -11,28 +11,28 @@ const BannerCarousel = () => {
       id: 1,
       title: "Modern Politics",
       subtitle: "Explore the latest trends and insights",
-      image: "/images/section/homeSection/BannerCarousel/1.png",
+      image: "/images/section/homeSection/BannerCarousel/1.jpeg",
       textColor: "text-white"
     },
     {
       id: 2,
       title: "Stationery Essentials",
       subtitle: "Stationery items for every need",
-      image: "/images/section/homeSection/BannerCarousel/2.png",
+      image: "/images/section/homeSection/BannerCarousel/2.jpeg",
       textColor: "text-white"
     },
     {
       id: 3,
       title: "Children's Special",
       subtitle: "Educational and entertaining books for kids",
-      image: "/images/section/homeSection/BannerCarousel/3.png",
+      image: "/images/section/homeSection/BannerCarousel/3.jpeg",
       textColor: "text-white"
     },
     {
       id: 4,
       title: "Human Brain",
       subtitle: "Unlock the mysteries of the mind",
-      image: "/images/section/homeSection/BannerCarousel/4.png",
+      image: "/images/section/homeSection/BannerCarousel/4.jpeg",
       textColor: "text-white"
     }
   ]
