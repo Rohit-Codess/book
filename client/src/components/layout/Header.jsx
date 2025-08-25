@@ -107,7 +107,7 @@ const Header = () => {
             {/* Desktop Icons */}
             <div className="hidden md:flex items-center space-x-4">
               <Link
-                to="/wishlist"
+                to="/signup"
                 className="relative p-2 text-gray-600 hover:text-blue-600 transition-colors"
               >
                 <Heart className="h-6 w-6" />
@@ -201,7 +201,7 @@ const Header = () => {
           {/* Mobile Icons */}
           <div className="px-4 py-3 border-t flex justify-around">
             <Link
-              to="/wishlist"
+              to="/signup"
               className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors relative"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -214,7 +214,7 @@ const Header = () => {
               )}
             </Link>
             <Link
-              to="/cart"
+              to="/login"
               className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors relative"
               onClick={() => setIsMenuOpen(false)}
             >
