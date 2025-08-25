@@ -59,7 +59,7 @@ const BannerCarousel = () => {
   }
 
   return (
-    <section className="relative w-full h-100 sm:h-80 lg:h-96 overflow-hidden">
+    <section className="relative w-full h-100 md:h-96 lg:h-[32rem] xl:h-[36rem] overflow-hidden">
       {/* Banner Slides */}
       <div 
         className="flex transition-transform duration-500 ease-in-out h-full"
@@ -75,7 +75,7 @@ const BannerCarousel = () => {
               src={banner.image}
               onClick={() => navigate('/books')}
               alt={banner.title}
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover cursor-pointer"
               
             />
             
