@@ -11,28 +11,28 @@ const BannerCarousel = () => {
       id: 1,
       title: "Modern Politics",
       subtitle: "Explore the latest trends and insights",
-      image: "/images/section/homeSection/BannerCarousel/1.jpg",
+      image: "/images/section/homeSection/BannerCarousel/1.png",
       textColor: "text-white"
     },
     {
       id: 2,
       title: "Stationery Essentials",
       subtitle: "Stationery items for every need",
-      image: "/images/section/homeSection/BannerCarousel/2.jpg",
+      image: "/images/section/homeSection/BannerCarousel/2.png",
       textColor: "text-white"
     },
     {
       id: 3,
       title: "Children's Special",
       subtitle: "Educational and entertaining books for kids",
-      image: "/images/section/homeSection/BannerCarousel/3.jpg",
+      image: "/images/section/homeSection/BannerCarousel/3.png",
       textColor: "text-white"
     },
     {
       id: 4,
       title: "Human Brain",
       subtitle: "Unlock the mysteries of the mind",
-      image: "/images/section/homeSection/BannerCarousel/4.jpg",
+      image: "/images/section/homeSection/BannerCarousel/4.png",
       textColor: "text-white"
     }
   ]
@@ -75,7 +75,7 @@ const BannerCarousel = () => {
               src={banner.image}
               onClick={() => navigate('/books')}
               alt={banner.title}
-              className="absolute inset-0 w-full h-full object-cover brightness-75"
+              className="absolute inset-0 w-full h-full object-cover"
               
             />
             
