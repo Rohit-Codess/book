@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
       <div className="max-w-md w-full bg-white rounded-lg shadow-md p-8">
         <div className="text-center mb-8">
+          <Link to="/" className="inline-block mb-4 text-blue-600 hover:text-blue-700 transition-colors">
+            ← Back to Home
+          </Link>
           <h1 className="text-3xl font-bold text-blue-600 mb-2">Book World</h1>
           <h2 className="text-2xl font-semibold text-gray-900">Welcome Back</h2>
           <p className="text-gray-600">Sign in to your account</p>
@@ -56,9 +60,9 @@ const Login = () => {
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
             Don't have an account?{' '}
-            <a href="/signup" className="text-blue-600 hover:text-blue-700">
+            <Link to="/signup" className="text-blue-600 hover:text-blue-700">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </div>

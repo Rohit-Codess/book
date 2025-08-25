@@ -79,23 +79,29 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             {/* Desktop Icons */}
             <div className="hidden md:flex items-center space-x-4">
-              <button className="relative p-2 text-gray-600 hover:text-blue-600 transition-colors">
+              <Link
+                to="/wishlist"
+                className="relative p-2 text-gray-600 hover:text-blue-600 transition-colors"
+              >
                 <Heart className="h-6 w-6" />
                 {wishlistItemCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                     {wishlistItemCount}
                   </span>
                 )}
-              </button>
+              </Link>
               
-              <button className="relative p-2 text-gray-600 hover:text-blue-600 transition-colors">
+              <Link
+                to="/cart"
+                className="relative p-2 text-gray-600 hover:text-blue-600 transition-colors"
+              >
                 <ShoppingCart className="h-6 w-6" />
                 {cartItemCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                     {cartItemCount}
                   </span>
                 )}
-              </button>
+              </Link>
               
               <Link
                 to={isAuthenticated ? '/account' : '/login'}
@@ -167,7 +173,11 @@ const Header = () => {
 
           {/* Mobile Icons */}
           <div className="px-4 py-3 border-t flex justify-around">
-            <button className="flex flex-col items-center space-y-1 text-gray-600 relative">
+            <Link
+              to="/wishlist"
+              className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors relative"
+              onClick={() => setIsMenuOpen(false)}
+            >
               <Heart className="h-6 w-6" />
               <span className="text-xs">Wishlist</span>
               {wishlistItemCount > 0 && (
@@ -175,8 +185,12 @@ const Header = () => {
                   {wishlistItemCount}
                 </span>
               )}
-            </button>
-            <button className="flex flex-col items-center space-y-1 text-gray-600 relative">
+            </Link>
+            <Link
+              to="/cart"
+              className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors relative"
+              onClick={() => setIsMenuOpen(false)}
+            >
               <ShoppingCart className="h-6 w-6" />
               <span className="text-xs">Cart</span>
               {cartItemCount > 0 && (
@@ -184,10 +198,10 @@ const Header = () => {
                   {cartItemCount}
                 </span>
               )}
-            </button>
+            </Link>
             <Link 
               to={isAuthenticated ? '/account' : '/login'}
-              className="flex flex-col items-center space-y-1 text-gray-600"
+              className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               <User className="h-6 w-6" />
