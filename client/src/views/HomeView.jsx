@@ -16,7 +16,7 @@ const HomeView = () => {
       <BannerCarousel />
       
       {/* Hero Section */}
-      <HeroSection />
+      {/* <HeroSection /> */}
       
       {/* Top Categories */}
       {/* <TopCategories /> */}
