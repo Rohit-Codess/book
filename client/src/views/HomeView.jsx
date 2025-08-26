@@ -1,5 +1,6 @@
 import React from 'react';
 import BannerCarousel from '../components/section/homeSection/BannerCarousel';
+import HeroSection from '../components/section/homeSection/HeroSection';
 // import TopCategories from '../components/section/homeSection/TopCategories';
 import BookSections from '../components/section/homeSection/BookSections';
 import CategoriesGrid from '../components/section/homeSection/CategoriesGrid';
@@ -13,6 +14,9 @@ const HomeView = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Banner Carousel */}
       <BannerCarousel />
+      
+      {/* Hero Section */}
+      <HeroSection />
       
       {/* Top Categories */}
       {/* <TopCategories /> */}
